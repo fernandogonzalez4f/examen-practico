@@ -1,0 +1,11 @@
+.color, p{
+    color: black;
+    font-size: 150%;
+    text-align: justify;
+}
+.bottom{
+    padding-bottom: 10%;
+}
+.color2{
+    color: rgb(107, 5, 5);
+}

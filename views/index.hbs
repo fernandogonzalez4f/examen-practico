@@ -1,0 +1,35 @@
+{{> header}}
+{{> navbar}}
+<div class="container">
+    <h1>Libros</h1>
+    {{#if libros}}
+        <table class="table table-dark table-hover">
+            <thead>
+                <tr>
+                    <td>ID</td>
+                    <td>Titulo</td>
+                    <td>Autor</td>
+                    <td>Año</td>
+                    <td>Género</td>
+                    <td>País</td>
+                    <td>Imagen</td>
+                </tr>
+            </thead>
+            <tbody>
+                {{#each libros}}
+                <tr>
+                    <td>{{_id}}</td>
+                    <td>{{titulo}}</td>
+                    <td>{{autor}}</td>
+                    <td>{{year}}</td>
+                    <td>{{genero}}</td>
+                    <td>{{pais}}</td>
+                    <td><img src="../images/{{imagen}}" width="100"></td>
+                </tr>
+                {{/each}}
+            </tbody>
+        </table>
+    {{ else }}
+        <div>Lo sentimos, no hay libros</div>
+    {{/if}}
+</div>
